@@ -1,0 +1,434 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.carousel-item {
+    height: 100vh;
+
+}
+
+.img-box {
+    width: 550px;
+    position: relative;
+}
+
+.pic-one {
+    width: 100%;
+}
+
+.pic-two {
+    width: 100px;
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+}
+
+.pic-three {
+    width: 75px;
+    position: absolute;
+    left: 150px;
+    bottom: 70px;
+}
+
+.pic-four {
+    width: 160px;
+    position: absolute;
+    right: 40px;
+    top: 110px;
+}
+
+.pic-five {
+    width: 110px;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+.pic-six {
+    width: 160px;
+    position: absolute;
+    right: 160px;
+    bottom: 35px;
+}
+
+.slide-one {
+    background: #b0c6f5;
+}
+
+.carousel-item .row {
+    margin: 12% 0;
+}
+
+.carousel-item h1 {
+    margin-top: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.carousel-item p {
+    margin: 30px 0 50px;
+    font-size: 13px;
+    color: white;
+}
+
+.carousel-item button {
+    padding: 8px 20px;
+    background: #0c5ce3;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+}
+
+.slide-two {
+    background: #f7f7f7;
+}
+
+.slide-two h1,
+.slide-two p {
+    color: #feb154;
+}
+
+.img-one {
+    width: 100%;
+}
+
+.img-two {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+.img-three {
+    width: 70px;
+    position: absolute;
+    left: 245px;
+    bottom: 55px;
+}
+
+.img-four {
+    width: 60px;
+    position: absolute;
+    right: 155px;
+    bottom: 95px;
+}
+
+.img-five {
+    width: 100px;
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+}
+
+
+.slide-two button {
+    background: linear-gradient(to right, #feb154, #ffd255);
+}
+
+.myh1 {
+    display: inline-block;
+    animation: fadeInLeft 1s;
+    /*    animation: fadeInLeft;*/
+    /* referring directly to the animation's @keyframe declaration */
+    /* don't forget to set a duration! */
+}
+
+.myp1 {
+    display: inline-block;
+    animation: lightSpeedInRight 2s;
+    /* referring directly to the animation's @keyframe declaration */
+    /*    animation-duration: 4s;*/
+    /* don't forget to set a duration! */
+}
+
+.myb1 {
+    display: inline-block;
+    animation: jackInTheBox 4s;
+    /* referring directly to the animation's @keyframe declaration */
+    /*    animation-duration: 6s;*/
+    /* don't forget to set a duration! */
+}
+
+.img-box .pic-one,
+.img-box .img-one {
+    display: inline-block;
+    animation: zoomIn 2s;
+    /* referring directly to the animation's @keyframe declaration */
+    /*    animation-duration: 2s;*/
+    /* don't forget to set a duration! */
+}
+
+.img-box .pic-two,
+.img-box .img-two {
+    display: inline-block;
+    animation: fadeInLeft 4s;
+    /* referring directly to the animation's @keyframe declaration */
+    /*    animation-duration: 2s;*/
+    /* don't forget to set a duration! */
+}
+
+.img-box .pic-three,
+.img-box .img-three {
+    display: inline-block;
+    animation: fadeInUp 4s;
+    /* referring directly to the animation's @keyframe declaration */
+    /*    animation-duration: 2s;*/
+    /* don't forget to set a duration! */
+}
+
+.img-box .pic-four,
+.img-box .img-four {
+    display: inline-block;
+    animation: fadeInDown 6s;
+    /* referring directly to the animation's @keyframe declaration */
+    /*    animation-duration: 2s;*/
+    /* don't forget to set a duration! */
+}
+
+.img-box .pic-five,
+.img-box .img-five {
+    display: inline-block;
+    animation: fadeInRight 6s;
+    /* referring directly to the animation's @keyframe declaration */
+    /*    animation-duration: 2s;*/
+    /* don't forget to set a duration! */
+}
+
+.img-box .pic-six {
+    display: inline-block;
+    animation: jackInTheBox 8s;
+    /* referring directly to the animation's @keyframe declaration */
+    /*    animation-duration: 5s;*/
+    /* don't forget to set a duration! */
+}
+
+
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        /*        opacity: 0;*/
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+
+    to {
+        /*        opacity: 1;*/
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        /*        opacity: 0;*/
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+
+    to {
+        /*        opacity: 1;*/
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+
+
+@keyframes fadeInRight {
+    0% {
+        /*        opacity: 0;*/
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+
+    to {
+        /*        opacity: 1;*/
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        /*        opacity: 0;*/
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+
+    to {
+        /*        opacity: 1;*/
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        /*        opacity: 0;*/
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+
+    to {
+        /*        opacity: 1;*/
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+
+@-webkit-keyframes zoomIn {
+    0% {
+        /*        opacity: 0;*/
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+
+    50% {
+        /*        opacity: 1*/
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        /*        opacity: 0;*/
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3)
+    }
+
+    50% {
+        /*        opacity: 1*/
+    }
+}
+
+@-webkit-keyframes jackInTheBox {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.1) rotate(30deg);
+        transform: scale(.1) rotate(30deg);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom
+    }
+
+    50% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    70% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg)
+    }
+
+    to {
+        opacity: 1;
+
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes jackInTheBox {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.1) rotate(30deg);
+        transform: scale(.1) rotate(30deg);
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom
+    }
+
+    50% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    70% {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg)
+    }
+
+    to {
+        opacity: 1;
+
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+
+@-webkit-keyframes lightSpeedInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+        transform: translate3d(100%, 0, 0) skewX(-30deg)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: skewX(20deg);
+        transform: skewX(20deg)
+    }
+
+    80% {
+        -webkit-transform: skewX(-5deg);
+        transform: skewX(-5deg)
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@keyframes lightSpeedInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+        transform: translate3d(100%, 0, 0) skewX(-30deg)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: skewX(20deg);
+        transform: skewX(20deg)
+    }
+
+    80% {
+        -webkit-transform: skewX(-5deg);
+        transform: skewX(-5deg)
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
